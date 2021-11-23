@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinate_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     tools:context=".MainActivity">
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.65" />
+
+  <View
+      android:id="@+id/view"
+      android:layout_width="1dp"
+      android:layout_height="0dp"
+      android:layout_marginTop="16dp"
+      android:background="@android:color/darker_gray"
+      app:layout_constraintBottom_toTopOf="@+id/guideline2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:fontFamily="sans-serif-medium"
+      android:text="@string/teama"
+      android:textColor="#616161"
+      android:textSize="14sp"
+      app:layout_constraintBottom_toTopOf="@+id/team_1_score"
+      app:layout_constraintEnd_toStartOf="@+id/view"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_chainStyle="spread">
+
+  </TextView>
+
+  <TextView
+      android:id="@+id/team_1_score"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:fontFamily="sans-serif-light"
+      android:text="@string/zero"
+      android:textColor="#000000"
+      android:textSize="56sp"
+      app:layout_constraintBottom_toTopOf="@+id/team_1_3"
+      app:layout_constraintEnd_toStartOf="@+id/view"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView">
+
+  </TextView>
+
+  <Button
+      android:id="@+id/team_1_3"
+      android:layout_width="157dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="24dp"
+      android:layout_marginEnd="24dp"
+      android:backgroundTint="#fc9803"
+      android:text="@string/three_pointer"
+      android:textColor="@color/black"
+      app:layout_constraintBottom_toTopOf="@+id/team_1_2"
+      app:layout_constraintEnd_toStartOf="@+id/view"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/team_1_score"
+      tools:ignore="DuplicateSpeakableTextCheck">
+
+  </Button>
+
+  <Button
+      android:id="@+id/team_1_2"
+      android:layout_width="157dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="24dp"
+      android:backgroundTint="#fc9803"
+      android:text="@string/two_pointer"
+      android:textColor="@color/black"
+      app:layout_constraintBottom_toTopOf="@+id/team_1_free"
+      app:layout_constraintEnd_toStartOf="@+id/view"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/team_1_3"
+      tools:ignore="DuplicateSpeakableTextCheck">
+
+  </Button>
+
+  <Button
+      android:id="@+id/team_1_free"
+      android:layout_width="157dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="24dp"
+      android:backgroundTint="#fc9803"
+      android:text="@string/free_throw"
+      android:textColor="@color/black"
+      app:layout_constraintBottom_toTopOf="@+id/guideline2"
+      app:layout_constraintEnd_toStartOf="@+id/view"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/team_1_2"
+      tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck">
+
+  </Button>
+
+  <Button
+      android:id="@+id/reset"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="32dp"
+      android:backgroundTint="#fc9803"
+      android:text="@string/reset"
+      android:textColor="@color/black"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent">
+
+  </Button>
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="54dp"
+      android:layout_height="15dp"
+      android:layout_marginTop="16dp"
+      android:fontFamily="sans-serif-medium"
+      android:text="@string/teamb"
+      android:textColor="#616161"
+      android:textSize="14sp"
+      app:layout_constraintBottom_toTopOf="@+id/team_2_score"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/view"
+      app:layout_constraintTop_toTopOf="parent">
+
+  </TextView>
+
+  <Button
+      android:id="@+id/team_2_2"
+      android:layout_width="157dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="24dp"
+      android:backgroundTint="#fc9803"
+      android:text="@string/two_pointer"
+      android:textColor="@color/black"
+      app:layout_constraintBottom_toTopOf="@+id/team_2_free"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/view"
+      app:layout_constraintTop_toBottomOf="@+id/team_2_3">
+
+  </Button>
+
+  <Button
+      android:id="@+id/team_2_free"
+      android:layout_width="157dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="24dp"
+      android:backgroundTint="#fc9803"
+      android:text="@string/free_throw"
+      android:textColor="@color/black"
+      app:layout_constraintBottom_toTopOf="@+id/guideline2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/view"
+      app:layout_constraintTop_toBottomOf="@+id/team_2_2">
+
+  </Button>
+
+  <Button
+      android:id="@+id/team_2_3"
+      android:layout_width="157dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="24dp"
+      android:layout_marginEnd="24dp"
+      android:backgroundTint="#fc9803"
+      android:text="@string/three_pointer"
+      android:textColor="@color/black"
+      app:layout_constraintBottom_toTopOf="@+id/team_2_2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/view"
+      app:layout_constraintTop_toBottomOf="@+id/team_2_score">
+
+  </Button>
+
+  <TextView
+      android:id="@+id/team_2_score"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:fontFamily="sans-serif-light"
+      android:text="@string/zero"
+      android:textColor="#000000"
+      android:textSize="56sp"
+      app:layout_constraintBottom_toTopOf="@+id/team_2_3"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/view"
+      app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+  </TextView>
+
+
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

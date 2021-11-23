@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ScoreLab</string>
+    <string name="reset">RESET</string>
+    <string name="free_throw">FREE THROW</string>
+    <string name="two_pointer">+2 POINTS</string>
+    <string name="three_pointer">+3 POINTS</string>
+    <string name="zero">0</string>
+    <string name="teama">TEAM A</string>
+    <string name="teamb">Team B</string>
+    <string name="aSnackbar">YAY TEAM A</string>
+    <string name="bSnackbar">YAY TEAM B</string>
+</resources>
